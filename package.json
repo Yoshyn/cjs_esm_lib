@@ -1,12 +1,12 @@
 {
   "name": "cjs_esm_lib",
   "version": "1.0.0",
-  "main": "./src/cjs-entry.cjs",
-  "module": "./src/esm-entry.js",
+  "main": "./src/entry.cjs",
+  "module": "./src/entry.mjs",
   "exports": {
     ".": {
-      "require": "./src/cjs-entry.cjs",
-      "import": "./src/esm-entry.js"
+      "require": "./src/entry.cjs",
+      "import": "./src/entry.mjs"
     }
   },
   "type": "module",

@@ -1,4 +1,4 @@
-import { myFunction } from './core.js';
+import { myFunction } from './core.mjs';
 
 const myFunction2 = () => {
   console.log('Hello from ES Modules!');

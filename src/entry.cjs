@@ -1,13 +1,9 @@
-const myFunction2 = () => {
-  console.log('Hello from CommonJS!');
-};
-
 const deasync = require('deasync');
 
 let isDone = false;
 let myFunction;
 
-import('./core.js').then(module => {
+import('./core.mjs').then(module => {
   myFunction = module.myFunction;
   isDone = true;
 }).catch(err => {
@@ -15,6 +11,10 @@ import('./core.js').then(module => {
 });
 
 deasync.loopWhile(() => !isDone);
+
+const myFunction2 = () => {
+  console.log('Hello from CommonJS!');
+};
 
 module.exports = {
   myFunction,
